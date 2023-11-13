@@ -334,6 +334,10 @@ main {
 
 /***** Course Section *****/
 
+.section-courses {
+  background-color: var(--bg-color);
+}
+
 .section-courses .grid {
   gap: 2.4rem;
 }
@@ -383,3 +387,173 @@ main {
 }
 
 /***** End Course Section *****/
+
+/***** Why Choose Section *****/
+
+/** Section Why Choose */
+
+.section-why--choose .grid {
+  gap: 8rem;
+
+  & .choose-left--div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  & .choose-right--div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.common-text--highlight {
+  font-size: 2.4rem;
+  width: 5.2rem;
+  aspect-ratio: 1;
+  background-color: var(--supporting-color);
+  color: var(--main-color);
+  font-weight: 700;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-align--right .why-choose--div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: end;
+  text-align: right;
+}
+.text-align--left .why-choose--div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: start;
+  text-align: left;
+}
+
+.choose-center--div,
+.choose-center--div figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.choose-center--div img {
+  width: 80%;
+  height: auto;
+}
+
+.choose-center--div figure::before,
+.choose-center--div figure::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  height: 40rem;
+  /*aspect-ratio: 1;
+  */
+  background-color: var(--main-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.choose-center--div figure::before {
+  animation: circle 0.4s linear infinite alternate;
+  -webkit-animation: circle 5s linear infinite alternate;
+}
+
+@keyframes circle {
+  0% {
+    background-color: #b3d0ff;
+  }
+  25% {
+    background-color: #80b1ff;
+  }
+  50% {
+    background-color: #4d91ff;
+  }
+  75% {
+    background-color: #99c0ff;
+  }
+  100% {
+    background-color: #3381ff;
+  }
+}
+
+.choose-center--div figure::after {
+  width: 45rem;
+  height: 45rem;
+  /* aspect-ratio: 1; */
+  background-color: transparent;
+  border: 0.5rem solid var(--para-color);
+  z-index: -2;
+}
+
+/***** End Why Choose Section *****/
+
+/***** Contact Homepage Section *****/
+
+.section-contact-homepage {
+  width: 60%;
+  min-height: 30rem;
+  margin: 0 auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-bottom: 4.8rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+
+  & .grid {
+    align-items: center;
+    gap: 3.6rem;
+  }
+}
+
+.section-contact-homepage .contact-image img {
+  width: 80%;
+  height: auto;
+}
+
+.section-contact-homepage .contact-title {
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+
+.section-contact-homepage .contact-content p {
+  padding: 1.2rem 0 2.4rem 0;
+}
+
+.section-contact-homepage .contact-content a {
+  color: var(--white-color);
+  text-transform: capitalize;
+}
+
+.section-contact-homepage .fa-solid {
+  padding: 0;
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+
+/***** End Contact Homepage Section *****/
