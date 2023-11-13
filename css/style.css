@@ -91,6 +91,11 @@ li {
 .grid-col--2 {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.grid-col--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .btn {
   display: inline-block;
   padding: 1.2rem 3.2rem;
@@ -106,6 +111,21 @@ li {
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
+}
+
+.section-common-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.section-common-subheading {
+  color: var(--heading-color);
+}
+
+.section-common--title {
+  font-size: 1.8rem;
+  padding: 2.4rem 0 1.2rem 0;
 }
 
 /* states  */
@@ -247,3 +267,51 @@ main {
 }
 
 /***** End HERO Section *****/
+
+/***** About Section *****/
+
+.section-about .grid {
+  gap: 6.4rem;
+}
+
+.section-about .about-div {
+  text-align: center;
+}
+
+.about-div .icon img {
+  padding: 2.4rem;
+  width: 15rem;
+  background-color: var(--supporting-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  cursor: pointer;
+}
+
+.about-div .icon:hover > img {
+  /* transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg); */
+  scale: 1.1;
+
+  /* background: linear-gradient(to right, #0575e6, #021b79); */
+  background: linear-gradient(
+    to top right,
+    #3d86fa,
+    #4484fb,
+    #679eff,
+    #b3d2ff,
+    #ebf3fe
+  );
+}
+
+/***** End About Section *****/
