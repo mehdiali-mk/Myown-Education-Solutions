@@ -76,7 +76,7 @@ li {
 /* layout */
 
 .container {
-  max-width: 120rem;
+  max-width: 142rem;
   margin: 0 auto;
   /* padding: 0rem 3.2rem; */
   padding: 6.4rem 2.4rem;
@@ -94,6 +94,10 @@ li {
 
 .grid-col--3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col--4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .btn {
@@ -126,6 +130,18 @@ li {
 .section-common--title {
   font-size: 1.8rem;
   padding: 2.4rem 0 1.2rem 0;
+}
+
+.fa-solid {
+  font-size: 2.4rem;
+  padding: 2.4rem;
+  background-color: var(--supporting-color);
+  color: var(--main-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /* states  */
@@ -315,3 +331,55 @@ main {
 }
 
 /***** End About Section *****/
+
+/***** Course Section *****/
+
+.section-courses .grid {
+  gap: 2.4rem;
+}
+
+.section-courses .course-div {
+  padding: 2.4rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.section-courses .course-div:hover {
+  box-shadow: var(--btn-box-shadow);
+  scale: 1.05;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+.section-courses .course-div:nth-child(2) .fa-solid {
+  color: #68bf9b;
+  background-color: #e7f6ef;
+}
+.section-courses .course-div:nth-child(3) .fa-solid {
+  color: #ff8b52;
+  background-color: #fbebe8;
+}
+.section-courses .course-div:nth-child(4) .fa-solid {
+  color: #183d3d;
+  background-color: #ccf7f7;
+}
+.section-courses .course-div:nth-child(5) .fa-solid {
+  color: #d988b9;
+  background-color: rgb(247, 223, 238);
+}
+.section-courses .course-div:nth-child(6) .fa-solid {
+  color: #ff9b50;
+  background-color: #f6dfce;
+}
+.section-courses .course-div:nth-child(7) .fa-solid {
+  color: #1450a3;
+  background-color: #dce9fa;
+}
+
+/***** End Course Section *****/
