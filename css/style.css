@@ -190,7 +190,7 @@ li {
       bottom: -0.3rem;
       left: 0;
       width: 0%;
-      border-bottom: 0.2rem solid var(--main-color);
+      border-bottom: 0.2rem solid var(--bnt-hover-bg-color);
       transition: all 0.3s linear;
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
@@ -524,7 +524,9 @@ main {
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
-
+  position: relative;
+  bottom: -20rem;
+  background-color: var(--white-color);
   & .grid {
     align-items: center;
     gap: 3.6rem;
@@ -557,3 +559,65 @@ main {
 }
 
 /***** End Contact Homepage Section *****/
+
+/***** Footer Section *****/
+
+footer {
+  background-color: var(--bnt-hover-bg-color-1);
+  padding-top: 15rem;
+}
+footer * {
+  color: var(--white-color);
+}
+
+.footer-subheading {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.footer-2--div,
+.footer-3--div,
+.footer-4--div {
+  text-align: right;
+}
+
+.footer-1--div p {
+  padding: 1.2rem 0 3.6rem 0;
+}
+.social-footer--icons {
+  display: flex;
+  gap: 2.4rem;
+}
+.footer-1--div .social-footer--icons a {
+  & .fa-brands {
+    width: 5rem;
+    aspect-ratio: 1;
+    background-color: var(--supporting-color);
+    color: var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+  }
+
+  & :hover {
+    scale: 1.1;
+    color: var(--bnt-hover-bg-color-1);
+    box-shadow: var(--btn-box-shadow);
+  }
+}
+
+.footer-logo-img {
+  width: 70%;
+}
+/***** End Footer Section *****/
