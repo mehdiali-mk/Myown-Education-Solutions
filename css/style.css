@@ -344,11 +344,11 @@ main {
 
 .section-courses .course-div {
   padding: 2.4rem;
-  transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
 }
 
 .section-courses .course-div:hover {
@@ -509,6 +509,71 @@ main {
 }
 
 /***** End Why Choose Section *****/
+
+/***** Blog Section *****/
+
+.section-blog {
+  background-color: var(--bg-color);
+
+  & .grid {
+    gap: 6.4rem;
+    padding-bottom: 9.6rem;
+  }
+
+  & .blog-card {
+    box-shadow: var(--btn-box-shadow);
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    overflow: hidden;
+  }
+
+  & .blog-card {
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+  }
+
+  & .blog-card:hover {
+    scale: 1.05;
+  }
+
+  & .card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  & .card-content {
+    padding: 1.2rem 2.4rem 2.4rem;
+  }
+
+  & .card-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+  }
+
+  & .card-date .date {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+
+  & .card-date .fa-solid {
+    background-color: transparent;
+    padding: 0;
+    font-size: 2.4rem;
+  }
+  & .card-content .section-common--title {
+    font-size: 2.4rem;
+  }
+}
+
+/***** End Blog Section *****/
 
 /***** Contact Homepage Section *****/
 
