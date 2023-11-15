@@ -83,7 +83,9 @@ li {
 }
 
 /* module / reusable  */
-
+.pt-s {
+  padding-top: 3.6rem;
+}
 .grid {
   display: grid;
 }
@@ -163,11 +165,11 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem 0;
+  padding: 1.8rem 2.4rem;
 }
 
 .nav-logo-img {
-  width: 25%;
+  width: 18%;
   /* height: auto; */
 }
 
@@ -208,6 +210,10 @@ li {
 
 /***** HERO Section *****/
 
+.section-hero {
+  padding-bottom: 8rem;
+}
+
 main {
   background: linear-gradient(
     to top right,
@@ -235,7 +241,7 @@ main {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 92px;
+  height: 12rem;
   transform: rotateY(180deg);
 }
 
@@ -575,6 +581,79 @@ main {
 
 /***** End Blog Section *****/
 
+/***** Actual Contact Form Section *****/
+
+.section-contact {
+  padding-bottom: 12rem;
+  & .grid {
+    gap: 6.4rem;
+  }
+}
+
+.contact-map {
+  & iframe {
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+  }
+  & :hover {
+    box-shadow: var(--btn-box-shadow);
+    scale: 1.005;
+  }
+}
+
+.contact-content .grid {
+  gap: 6.4rem;
+}
+
+label {
+  display: block;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin-bottom: 0.4rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  border: 1px solid var(--font-color);
+}
+
+::placeholder {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.btn-submit {
+  font-size: 1.8rem;
+  border: none;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 0.1rem solid var(--bnt-hover-bg-color-1);
+}
+
+/***** End Actual Contact Form Section *****/
+
 /***** Contact Homepage Section *****/
 
 .section-contact-homepage {
@@ -606,6 +685,7 @@ main {
 .section-contact-homepage .contact-title {
   font-size: 4.4rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 .section-contact-homepage .contact-content p {
@@ -686,3 +766,33 @@ footer * {
   width: 70%;
 }
 /***** End Footer Section *****/
+
+/***** Scroll Bar Section *****/
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--supporting-color);
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--heading-color);
+}
+
+/***** End Scroll Bar Section *****/
