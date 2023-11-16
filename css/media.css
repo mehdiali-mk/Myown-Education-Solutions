@@ -185,9 +185,16 @@
 /***** Below 580px *****/
 
 @media (max-width: 580px) {
-  .grid-col--3,
+  .grid-col--3 {
+    grid-template-columns: 1fr;
+  }
+
   .grid-col--2 {
     grid-template-columns: 1fr;
+  }
+
+  .section-contact .grid {
+    gap: 6.4rem;
   }
 
   .container {
